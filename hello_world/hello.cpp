@@ -30,6 +30,9 @@ int main() {
 
     if (node) {
         node->setMaterialFlag(EMF_LIGHTING, false);
+    } else {
+        device->drop();
+        return 1;
     }
 
     smgr->addCameraSceneNodeFPS(nullptr, 100.f, 1.f);
