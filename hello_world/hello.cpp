@@ -9,10 +9,12 @@ using namespace io;
 using namespace gui;
 
 int main() {
-    auto device = createDevice( video::EDT_OPENGL, dimension2d<u32>(800, 600), 32, false, false, false, 0);
+    // Initialize Irrlicht
+    auto device = createDevice(video::EDT_OPENGL, dimension2d<u32>(800, 600), 32, false, false, false, 0);
 
-    if (!device)
+    if (!device) {
         return 1;
+    }
 
     device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
 
