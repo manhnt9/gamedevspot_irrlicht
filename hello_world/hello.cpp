@@ -37,7 +37,7 @@ int main() {
 
     smgr->addCameraSceneNodeFPS(nullptr, 100.f, 1.f);
 
-    while(device->run()) {
+    while (device->run()) {
         driver->beginScene(true, true, SColor(255,100,101,140));
         smgr->drawAll();
         driver->endScene();
